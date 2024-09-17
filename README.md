@@ -1,5 +1,5 @@
 # Employee Management System
-Supports basic CRUD operations on the UI. Data is saved in session storage.
+Supports basic CRUD operations on the UI. Data is saved in session storage.  
 Link to the app: https://noob0799.github.io/EmployeeManagementSystem/
 
 ## Employee List and Employee Details
