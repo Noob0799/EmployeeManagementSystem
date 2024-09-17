@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+</head>
+<body>
+    <div id="app">
+        <header class="employee-info-header">
+            <h1>Employee Management System</h1>
+            <button class="add-employee-btn">Add Employee</button>
+        </header>
+        <div class="employee-info-body">
+            <div class="employee-info-body-list">
+                <div class="employee-info-body-list-header"><span>Employees List</span></div>
+                <div class="employee-info-body-list-body"></div>
+            </div>
+            <div class="employee-info-body-display">
+                <div class="employee-info-body-display-header"><span>Employee Information</span></div>
+                <div class="employee-info-body-display-body"></div>
+            </div>
+        </div>
+        <div class="employee-add-edit-modal">
+            <form class="employee-add-edit-form">
+                <h1 class="employee-add-edit-header"></h1>
+                <input type="hidden" name="id" />
+                <div>
+                    <input type="text" name="firstName" placeholder="First Name" required />
+                    <input type="text" name="lastName" placeholder="Last Name" required />
+                </div>
+                <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+                <input type="text" name="address" placeholder="Address (Optional)" />
+                <input type="number" name="mobileNumber" placeholder="Mobile Number" required />
+                <input type="number" name="salary" placeholder="Salary" required/>
+                <input type="submit" class="add-edit-employee-submit-btn" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/index.css"/>
+    <script src="src/index.js"></script>
+</body>
+</html>

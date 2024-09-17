@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.employee-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-info-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-info-body > div {
+    border: 1px solid black;
+}
+
+.employee-info-body-list {
+    width: 30%;
+}
+
+.employee-info-body-display {
+    width: 70%;
+}
+
+.employee-info-body-list-header, .employee-info-body-display-header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.employee-info-body-list-body, .employee-info-body-display-body {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.employee-item {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(141, 141, 141, 0.25);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.employee-item:hover {
+    background-color: rgb(141, 141, 141, 0.5);
+}
+
+.selected {
+    background-color: rgb(141, 141, 141, 0.75);
+}
+
+
+.employee-item > i {
+    font-size: 24px;
+}
+
+.add-employee-btn, .add-edit-employee-submit-btn {
+    cursor: pointer;
+    border: none !important;
+    border-radius: 5px;
+    padding: 10px 20px !important;
+}
+
+.employee-add-edit-modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 141, 141, 0.541);
+}
+
+.employee-add-edit-form {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 50px grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.employee-add-edit-form > h1 {
+    margin: 0;
+}
+
+.employee-add-edit-form input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.employee-add-edit-form input::-webkit-outer-spin-button,
+.employee-add-edit-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-edit-employee-submit-btn {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.employee-info-body-display-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.employee-info-body-display-body > img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.employee-name {
+    display: flex;
+    align-items:baseline
+}
+
+.employee-name h1 {
+    margin: 0;
+}
+
+.employee-name > i {
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
